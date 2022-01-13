@@ -5,6 +5,7 @@ import Header from './containers/Header';
 import ProductListing from './containers/ProductListing';
 import ProductDetails from './containers/ProductDetails';
 
+
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProductListing />}></Route>
           <Route path="/product/:productId" element={<ProductDetails/>}></Route>
+
         </Routes>
       </Router>
     </div>
