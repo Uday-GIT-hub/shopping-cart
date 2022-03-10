@@ -6,7 +6,7 @@ import {fetchProducts} from '../redux/actions/productActions';
 const ProductListing = () => {
     const products = useSelector((state) => state);
     console.log(products);
-    const axios = require('axios');
+  
     const dispatch = useDispatch();
 
     // const fetchProducts = async () => {
