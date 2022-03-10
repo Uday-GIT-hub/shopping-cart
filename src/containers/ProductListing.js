@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react' ;
 import {useSelector,useDispatch} from "react-redux";
 import ProductComponent from './ProductComponent';
-import {setProducts,fetchProducts} from '../redux/actions/productActions';
+import {fetchProducts} from '../redux/actions/productActions';
 
 const ProductListing = () => {
     const products = useSelector((state) => state);
