@@ -8,9 +8,8 @@ const ProductDetials = () => {
     const product = useSelector((state) => state.product);
     const {title,image,price,category,description} = product;
     const { productId } = useParams();
-    const axios = require('axios');
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+
 
     // const fetchProductDetail = async () => {
         
@@ -40,12 +39,12 @@ const ProductDetials = () => {
             <div className="ui vertical divider">AND</div>
             <div className="middle aligned row">
               <div className="column lp" style={{height:"80vh",alignItems :"center",display:"flex",justifyContent:"center"}}>
-                <img className="ui fluid image" src={image} style={{width:"60%",marginTop:"10px",marginLeft:"10px",marginRight:"10px"}}/>
+                <img className="ui fluid image" src={image} alt="item-image" style={{width:"60%",marginTop:"10px",marginLeft:"10px",marginRight:"10px"}}/>
               </div>
               <div className="column rp">
                 <h1>{title}</h1>
                 <h2>
-                  <a className="ui teal tag label">${price}</a>
+                  <a href="#" className="ui teal tag label">${price}</a>
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
